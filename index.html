@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>My Website</title>
-    <style>
-        .carousel-inner img {
-            margin: auto;
-        }
-    </style>
     <!-- MDB icon -->
     <link rel="icon" href="img/sign.ico" type="image/x-icon" />
     <!-- Font Awesome -->
@@ -24,6 +19,28 @@
     />
     <!-- MDB -->
     <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- Custom CSS-->
+    <style>
+        .carousel-inner img {
+            margin: auto;
+        }
+
+        .slide-title {
+            font-size: 8vw;
+        }
+
+        .slide-notes{
+            font-size: 2.5vw;
+        }
+
+        .slide-button{
+            width: 15vw;
+            height: 5vw;
+            font-size: 2vw;
+            padding: 1vw;
+            overflow: hidden;
+        }
+    </style>
   </head>
   <body>
     <!-- Start your project here-->
@@ -48,23 +65,23 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Navbar brand -->
             <a class="navbar-brand mt-2 mt-lg-0" href="#">
-            <img
-                src="img/sign.ico"
-                height="20"
-                alt="MDB Logo"
-                loading="lazy"
-            />
+                <img
+                    src="img/sign.ico"
+                    height="20"
+                    alt="MDB Logo"
+                    loading="lazy"
+                />
             </a>
             <!-- Left links -->
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <a class="nav-link" href="#">Dashboard</a>
+                <a class="nav-link" href="#">Progetti</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Team</a>
+                <a class="nav-link" href="#">Chi sono</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="#">Supportami</a>
             </li>
             </ul>
             <!-- Left links -->
@@ -113,45 +130,80 @@
 
     <!-- Inner -->
     <div class="carousel-inner d-flex">
-    <!-- Single item -->
+    <!-- Item 1 -->
     <div class="carousel-item active align-items-sm-center">
         <video width="100%" class="img-fluid" autoplay loop muted>
             <source src="vid/Preganziol_copertina(1080p).mp4" type="video/mp4" />
         </video>
-        <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>
-                Nulla vitae elit libero, a pharetra augue mollis interdum.
-            </p>
-            <button type="button" class="btn btn-outline-light">Button</button>
+        <div class="carousel-caption d-flex" style="
+            background-color: rgba(0,0,0,0.5);
+            width:100%;
+            height: 100%;
+            margin:0;
+            padding:10px;
+            place-items: center;
+            transform: translate(-15%,13px);
+        ">
+            <div style="margin:auto">
+                <h2 class="slide-title">Preganziol</h2>
+                <p class="slide-notes">
+                    Collezione di foto e video catturati a Preganziol
+                </p>
+                <button type="button" class="btn btn-outline-light slide-button">APRI</button>
+            </div>
         </div>
     </div>
+    <!-- END Item 1 -->
 
-    <!-- Single item -->
-    <div class="carousel-item">
-        <video class="img-fluid" autoplay loop muted>
-            <source width="100%" src="https://mdbcdn.b-cdn.net/img/video/forest.mp4" type="video/mp4" />
-        </video>
-        <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-        </div>
-    </div>
-
-    <!-- Single item -->
+    <!-- Item 2 -->
     <div class="carousel-item">
         <video width="100%" class="img-fluid" autoplay loop muted>
-            <source src="https://mdbcdn.b-cdn.net/img/video/Agua-natural.mp4" type="video/mp4"/>
+            <source src="vid/Preganziol_copertina(1080p).mp4" type="video/mp4" />
         </video>
-        <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-        </p>
+        <div class="carousel-caption d-flex" style="
+            background-color: rgba(0,0,0,0.5);
+            width:100%;
+            height: 100%;
+            margin:0;
+            padding:10px;
+            place-items: center;
+            transform: translate(-15%,13px);
+        ">
+            <div style="margin:auto">
+                <h2 class="slide-title">Preganziol 2</h2>
+                <p class="slide-notes">
+                    Collezione di foto e video catturati a Preganziol
+                </p>
+                <button type="button" class="btn btn-outline-light slide-button">APRI</button>
+            </div>
         </div>
     </div>
+    <!-- END Item 2 -->
+    
+    <!-- Item 3 -->
+    <div class="carousel-item">
+        <video width="100%" class="img-fluid" autoplay loop muted>
+            <source src="vid/Preganziol_copertina(1080p).mp4" type="video/mp4" />
+        </video>
+        <div class="carousel-caption d-flex" style="
+            background-color: rgba(0,0,0,0.5);
+            width:100%;
+            height: 100%;
+            margin:0;
+            padding:10px;
+            place-items: center;
+            transform: translate(-15%,13px);
+        ">
+            <div style="margin:auto">
+                <h2 class="slide-title">Preganziol 3</h2>
+                <p class="slide-notes">
+                    Collezione di foto e video catturati a Preganziol
+                </p>
+                <button type="button" class="btn btn-outline-light slide-button">APRI</button>
+            </div>
+        </div>
+    </div>
+    <!-- END Item 3 -->
     </div>
     <!-- Inner -->
 
