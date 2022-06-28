@@ -21,24 +21,76 @@
     <link rel="stylesheet" href="css/mdb.min.css" />
     <!-- Custom CSS-->
     <style>
+        /* Montserrat */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        
+        /* Josefin Sans */
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+        /* Bebas */
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+
+        *{
+            /* font-family: 'Montserrat', sans-serif; */
+            /* font-family: 'Josefin Sans', sans-serif; */
+        }
+        
         .carousel-inner img {
             margin: auto;
+            font-family: 'Cairo', sans-serif;
         }
-
+        
         .slide-title {
-            font-size: 8vw;
+            font-family: 'Bebas Neue', cursive;
+            font-size: clamp(10pt,8vw,100pt);
         }
 
         .slide-notes{
-            font-size: 2.5vw;
+            font-size: clamp(10pt, 2.5vw, 25pt);
         }
 
         .slide-button{
-            width: 15vw;
-            height: 5vw;
-            font-size: 2vw;
-            padding: 1vw;
+            width: clamp(90px,15vw,240px);
+            height: clamp(30px,5vw,80px);
+            font-size: clamp(10px,1.5vw,23px);
+            padding: 0;
             overflow: hidden;
+        }
+        .carousel-caption{
+            background-color: rgba(0,0,0,0.3);
+            width:100%;
+            height: 100%;
+            margin:0;
+            padding:10px;
+            place-items: center;
+            transform: translate(-15%,13px);
+        }
+        .carousel-caption div{
+            margin:auto;
+        }
+        .carousel-inner{
+            top:-5vh;
+            height: 100vh;
+        }
+        .carousel-item{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%; 
+            overflow: hidden;
+        }
+        .img-fluid{
+            position: relative;
+            min-width: 175vh; 
+            min-height: 100vh;
+            width: auto;
+            height: auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
         }
     </style>
   </head>
@@ -132,19 +184,11 @@
     <div class="carousel-inner d-flex">
     <!-- Item 1 -->
     <div class="carousel-item active align-items-sm-center">
-        <video width="100%" class="img-fluid" autoplay loop muted>
+        <video class="img-fluid" autoplay loop muted>
             <source src="vid/Preganziol_copertina(1080p).mp4" type="video/mp4" />
         </video>
-        <div class="carousel-caption d-flex" style="
-            background-color: rgba(0,0,0,0.5);
-            width:100%;
-            height: 100%;
-            margin:0;
-            padding:10px;
-            place-items: center;
-            transform: translate(-15%,13px);
-        ">
-            <div style="margin:auto">
+        <div class="carousel-caption d-flex">
+            <div>
                 <h2 class="slide-title">Preganziol</h2>
                 <p class="slide-notes">
                     Collezione di foto e video catturati a Preganziol
@@ -160,15 +204,7 @@
         <video width="100%" class="img-fluid" autoplay loop muted>
             <source src="vid/Preganziol_copertina(1080p).mp4" type="video/mp4" />
         </video>
-        <div class="carousel-caption d-flex" style="
-            background-color: rgba(0,0,0,0.5);
-            width:100%;
-            height: 100%;
-            margin:0;
-            padding:10px;
-            place-items: center;
-            transform: translate(-15%,13px);
-        ">
+        <div class="carousel-caption d-flex">
             <div style="margin:auto">
                 <h2 class="slide-title">Preganziol 2</h2>
                 <p class="slide-notes">
@@ -185,15 +221,7 @@
         <video width="100%" class="img-fluid" autoplay loop muted>
             <source src="vid/Preganziol_copertina(1080p).mp4" type="video/mp4" />
         </video>
-        <div class="carousel-caption d-flex" style="
-            background-color: rgba(0,0,0,0.5);
-            width:100%;
-            height: 100%;
-            margin:0;
-            padding:10px;
-            place-items: center;
-            transform: translate(-15%,13px);
-        ">
+        <div class="carousel-caption d-flex">
             <div style="margin:auto">
                 <h2 class="slide-title">Preganziol 3</h2>
                 <p class="slide-notes">
